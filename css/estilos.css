@@ -1,0 +1,931 @@
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    box-sizing: border-box;
+}
+.fundovideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.fundovideo video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+a{
+    text-decoration:none;
+}
+a:link{
+    color: #fff;
+}
+a:visited{
+    color: #fff;
+}
+.gradiente{
+    width: 100%;
+    position:absolute;
+    z-index: 1;
+    opacity: 85%;
+    border: 2px solid red;
+
+}
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    z-index: 2;
+    background-image: linear-gradient(to top, #07174800, #071748);
+    padding-top: 0px;
+}
+.header img{
+    margin-bottom: 70px;
+    margin-left: 15px;
+}
+.menu{
+    display:flex;
+    margin-bottom: 70px;
+}
+
+.menu li{
+    font-family: Scania Sans CY;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.menu li a{
+    display: block;
+    padding: 5px 15px;
+    
+}
+.menu li a:hover{
+    border-bottom: 2px solid #fd1d1d;
+    color: #071748;
+}
+.menu li a:visited{
+    color: #fff;
+}
+li a.active{
+    border-bottom: 2px solid #fd1d1d;
+}
+.menutabs{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.menutabs li{
+    font-family: Scania Sans CY;
+    font-size: 15px;
+    font-weight: bold;
+    color: #071748;
+    margin: 15px 25px;
+    
+}
+.menutabs a{
+    color: #071748;
+    transition: all 0.3s;
+}
+.menutabs a:hover{
+    background-color: #071748;
+    border-radius: 3px;
+    padding: 10px;
+    color: #fff;
+
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+  }
+  
+.dropdown-content a {
+    display: block;
+    text-align: left;
+  }
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+
+.flex img{
+    max-width: 100%;
+    display: block;
+}
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 10px;
+}
+.flex > div{
+    flex: 1 1 120px;
+    margin: 2px;
+}
+.flex p{
+    padding-top: 5px;
+    font-family: Scania Sans CY Headline;
+    font-size: 14px;
+    font-weight: bold;
+    color: #071748;
+    letter-spacing: 1.2px;
+    
+}
+.zoom img{
+    max-width: 100%;
+    /* -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s; */
+     transition: all 0.3s;
+}
+.zoom:hover img{
+    /* -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3); */
+    transform: scale(1.2);
+}
+.zoom:hover p{
+    /* -moz-transform: scale(1.3);
+    -webkit-transform: scale(1.3); */
+    transform: scale(1.2);
+}
+h1{
+    text-align: center;
+    margin: 0px 50px 0px 50px;
+    font-family: Scania Sans CY Headline;
+    font-size: 25px;
+    font-weight: bold;
+    color: #071748;
+    letter-spacing: 1.2px;
+}
+h2{
+    text-align: center;
+    font-family: Scania Sans CY Headline;
+    font-size: 20px;
+    font-weight: bold;
+    color: #071748;
+}
+.flex1{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: center;
+	align-content: space-around;
+    background-color: #071748;
+    max-width: 100%;
+    height: 100px;
+    padding: 7px;
+    margin-top: 15px;
+}
+.flex1 .box{
+    font-family: Scania Sans CY Headline;
+    font-size: 21px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 2px;
+}
+.flex1 p{
+    float: right;
+    margin: 15px;
+}
+
+@media only screen and (max-width: 625px){
+    .flex{
+        flex-direction: column;
+        align-items: center;
+    }
+    .flex1 { padding: 30px;}
+    .box {
+        padding: 15px;
+    }
+}
+.box img{
+    width: 50px;
+}
+footer{
+    background-color: #071748;
+    width: 100%;
+    height: auto;
+    position: relative;
+    border-top: 3px red solid;
+    bottom: auto;
+}
+.logo{
+    display: flex;
+    position: absolute;
+	flex-wrap: wrap;
+	justify-content: center;
+    top: -30px;
+    width: 100%;
+}
+
+.menufooter{
+    display:flex;
+    justify-content:center;
+    margin-top: 50px;
+    height:40px;
+
+}
+.menufooter li{
+    margin-left: 10px;
+    font-family: Scania Sans CY Headline;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    padding: 12px;
+    font-weight: bold;
+    
+}
+.menufooter li a{
+    display: block;
+    border-bottom: 1px solid red;
+    
+}
+.menufooter ul a{
+    font-size: 10px;
+    border: none;
+    padding: 3px;
+    font-weight:100;
+}
+.social{
+    color: #fff;
+    font-size:25px;
+    text-align: center;
+    margin: 20px;
+    
+}
+.social i{
+    padding: 15px;
+    
+}
+.bi-facebook:hover{
+    background:linear-gradient(120deg, #1245b4, #1c65a8);
+    
+}
+.bi-instagram:hover{
+    background:linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+.bi-twitter:hover{
+    background:linear-gradient(45deg, #53baff, #00ACEE, #0884d6);
+}
+.bi-youtube:hover{
+    background: red;
+}
+.bi-linkedin:hover{
+    background: #0a76be;
+}
+.flex3{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+    align-items: center;
+	align-content: space-around;  
+    max-width: 100%;
+    font-family: Scania Sans CY;
+    font-weight: bold;
+    font-size: 10px;
+    color: #fff;
+    letter-spacing: 1.2px;
+    padding: 10px;
+}
+.pfooter{
+    color: #fff;
+    font-size: 9px;
+    text-align: center;
+    font-family: Scania Sans CY;
+    padding:5px;
+}
+.card{
+    position: relative;
+    max-width: 100%;
+    height: 600px;
+    border-bottom: 3px solid red;
+}
+
+.card1{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    top: 500px;
+    background-image: url(../imagens/concessionária.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.imgabs{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+.textoabs{
+    position: absolute;
+    font-family: Scania Sans CY Headline;
+    font-weight: bold;
+    top: 400px;
+    left: 50px;
+    padding: 0px;
+    color: #fff;
+    text-align: right;
+    text-shadow: 0px 3px 7px rgb(63, 63, 63);
+}
+.textoabs2{
+    position: absolute;
+    font-family: Scania Sans CY Headline;
+    font-weight: bold;
+    top: 310px;
+    left: 50px;
+    padding: 0px;
+    color: #fff;
+    text-align: right;
+    text-shadow: 0px 3px 7px rgb(63, 63, 63);
+}
+.clear{
+    clear: both;
+    content: "";
+    display: table;
+}
+.bv1{
+    font-size:50px;
+}
+
+.tx{
+    font-size: 23px;
+    padding: 0px;
+}
+.tx1{
+    font-size: 25.5px;
+    padding: 0px;
+}
+.botao{
+    font-size: 13px;
+    padding: 13px;
+    padding-left: 0px;
+    background-color: #071748;
+    border-radius: 10px;
+    width: 120px;
+    float: right;
+    margin-top: 5px;
+}
+.flex4{
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     align-content: flex-start;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     align-items: center;
+}
+.flex4 img{
+    width: 300px;
+    height: 180px;
+    object-fit: cover;
+}
+.flex4 p{
+    padding-left: 20px;
+    color: #071748;
+    text-align: justify;
+}
+section{
+    margin: 0px 0px;
+    text-align: center;
+}
+.smotores p{
+    font-family: Scania Sans CY;
+    font-size: 16px;
+    text-align: justify;
+    color: black;
+    margin: 10px 50px 10px 50px;
+}
+.smotores img{
+    /* width: 100%; */
+    
+}
+section h1{
+
+
+}
+
+.flex5{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    margin: 0px 50px 0 50px;
+}
+.flex5 img{
+    max-width: 100px;
+}
+
+.flex5 div{
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+.flex5 p{
+    font-family: Scania Sans CY;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #071748;
+}
+.flex6 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+}
+.flex6 img{
+    max-width: 100%;
+    display: block;
+}
+.flex6 > div{
+    flex: 1 1 200px;
+}
+.flex6 .pre{
+    white-space: pre;
+}
+.flex7 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+
+}
+.flex7 img{
+    max-width:100%;
+    margin: auto;
+
+}
+.flex7 div{
+    flex: 1 1 200px;
+    padding-top: 10px;
+
+}
+.flex7 .pre{
+    white-space: pre;
+    font-family: Scania Sans CY;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 20px;
+}
+section h3{
+    justify-content:center;
+    font-family: Scania Sans CY;
+    font-size: 20px;
+    font-weight: bold;
+    color: #071748;
+    margin: 0 20px;
+    margin: 10px 50px 10px 50px;
+    text-transform: uppercase;
+    text-align: left;
+}
+section p{
+    text-align: justify;
+    font-family: Scania Sans CY;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin: 10px 50px 10px 50px;
+}
+.coluna{
+    border: 2px solid red;
+    background-color: #071748;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.tabela h3{
+    color: #fff;
+    font-family: Scania Sans CY;
+    font-size: 16px;
+}
+.tabela p{
+    color: #fff;
+    font-family: Scania Sans CY;
+    font-size: 13px;
+}
+.tabela {
+    display: -webkit-flex;
+    display: flex;
+}
+input[type=text] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+.tbvideos{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+0
+        border: 2px solid red;
+}
+.tbvideos > div{
+    flex: 1 1 200px;
+}
+video {
+    width: 90.5%;
+}
+figcaption{
+    text-align: center;
+}
+.row{
+    display: -webkit-flex;
+    display: flex;
+    border: 2px solid red;
+}
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: auto;
+    border: 2px solid red;
+  }
+  .column img{
+      width: 50%;
+      height: 90%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 10px;
+  }
+  .column p{
+      font-size: 15px;
+      margin: 50px 15px;
+  }
+  @media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+    .column p{
+        margin: 30px;
+    }
+  }
+.absoluteantigos{
+    background-image: url(imagens/antigo.png);
+    width: 100%;
+    height: 200px;
+    background-repeat:no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.centerh1{
+    margin: 0;
+    color: #fff;
+    font-size: 45px;
+    font-family: Scania Sans CY Headline;
+    font-weight: bold;
+}
+.fotosmodelos{
+    float: left;
+    width: 43%;
+    height: auto;
+    background-color: #071748;
+    margin-left: 50px;
+    margin-bottom: 20px;
+
+}
+.fotosmodelos img{
+    width: 100%;
+    height: auto;
+}
+.bottomh3{
+    padding: 5px;
+    text-align: center;
+}
+.bottomh3 h3{
+    color: #fff;
+    margin: 10px;
+}
+.bottomh3 p{
+    color: #fff;
+    margin: 10px;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Center website */
+  .row1 {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 50px;
+    background-color: #071748;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column1 {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+  }
+  .column1 h3{
+      margin: 7px;
+      color: #fff;
+
+  }
+  .column1 p{
+    margin: 7px;
+    color: #fff;
+}
+  .column1 img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media (max-width: 800px) {
+    .column1 {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .column1 {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .flexcentro {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    background-color: #e9e9e9;
+    margin: 0px 50px 0px 50px;
+  }
+  .flexleft {
+    flex: 50%;  
+    margin: auto;
+  }
+  .flexleft h3{
+      text-align: center;
+      margin: 0px 30px 0px 30px;
+  }
+  .flexright {
+    flex: 50%;
+    margin: auto;
+  }
+  .flexright1{
+    flex:50%;
+    margin: auto;
+    margin-right: 50px;
+}
+  .flexright img{
+      width: 100%;
+  }
+  .flexleft img{
+    width: 100%;
+  }
+  .flexdiretor p{
+      text-align: center;
+      font-size: 12px;
+      padding-top: 10px;
+  }
+
+  @media (max-width: 800px) {
+      .flexleft p{
+        font-size: smaller;
+      }
+      .flexleft h2{
+        font-size: medium;
+      }
+      .flexdiretor p{
+          text-align: center;
+          font-size: 10px;
+      }
+      .header {
+        text-align: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .header {
+        text-align: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .header img{
+        margin-bottom: 0px;
+    }
+
+      
+  }
+  @media (max-width:700px) {
+    .header {
+        text-align: center;
+        justify-content: center;
+        padding-top: 10px;
+    }
+    .header img{
+        margin-bottom: 0px;
+    }
+    .menu li a{
+        padding: 5px;
+        margin: 0px;
+        font-size:2.6vw;
+        text-align: center;
+    }
+    h1{
+        margin: 0px 15px 0px 15px;
+    }
+    .smotores p{
+        margin: 0px 15px 0px 15px;
+    }
+    .smotores img{
+        width: 100%;
+    }
+
+    .footer {
+        height: 100px;
+    }
+    
+    .textoabs{
+        margin: 50px 50px  0px 25px;
+    }
+    .menufooter a{
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+        font-weight:500;
+    }
+    .menufooter li{
+        margin: 0px;
+        padding: 8px;
+    }
+    .flexcentro{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
+ 
+      .flexleft p{
+            font-size: 16px;
+        
+
+      }
+      .flexleft h2{
+       font-size: 20px;
+
+      }
+      .flexdiretor p{
+          text-align: center;
+          font-size: 11px;
+
+      }
+      section h3{
+        
+        margin: 0px 0px 0px 15px;
+    }
+    .flex5{
+        margin: 0px 15px 0px 15px;
+    }
+    .flex7 img{
+        max-width:200px;
+        margin: auto;
+    
+    }
+    .bv1{
+        font-size:35px;
+        text-align: center;
+    }
+    .card1{
+        position:relative;
+        width: 100%;
+        height: 500px;
+        top:927px;
+    }
+    .textoabs2{
+    position: absolute;
+    font-family: Scania Sans CY Headline;
+    font-weight: bold;
+    top: 310px;
+    left: 50px;
+    padding: 0px;
+    color: #fff;
+    text-align: right;
+    text-shadow: 0px 3px 7px rgb(63, 63, 63);
+    }
+    .flexright1{
+        margin: 0px;
+    }
+    .footerbottom{
+       top: 1800px;
+        position: relative;
+
+    }
+
+}
+
+
+    @media (max-width: 880px){
+        .header{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            flex-wrap: wrap;
+            position: absolute;
+            width: 100%;
+            height: 15%;
+            z-index: 2;
+            background-image: linear-gradient(to top, #07174800, #071748);
+        }
+        .header img{
+            margin-bottom: 70px;
+            margin-left: 15px;
+        }
+        .menu{
+            display:flex;
+            margin-bottom: 70px;
+        }
+        
+        .menu li{
+            font-family: Scania Sans CY;
+            font-size: 15px;
+            font-weight: bold;
+            color: #fff;
+        }
+        .menu li a{
+
+            padding: 5px 5px;
+        }
+        
+        
+    }
+    @media (max-width:955px){
+        .flex > div{
+            flex: 1 1 190px;
+            margin: 2px;
+        }
+        .flex img{
+            max-width: 100%;
+            display: block;
+            margin: auto;
+        }
+    }
+    @media (max-width: 790px){
+        .header {
+            text-align: center;
+            justify-content: center;
+            padding-top: 10px;
+        }
+        .header img{
+            margin-bottom: 0px;
+        }
+        .menu li a{
+            padding: 0px;
+            margin:1.5vw;
+            font-size:2.3vmin;
+            text-align: center;
+
+        }
+        
+        
+    }
+    .footerbottom{
+        bottom: -1280px;
+        position: relative;
+
+    }
+       
+
+hr{
+    width: 50%;
+}

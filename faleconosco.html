@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/splitscreentext.css">
+    <link rel="stylesheet" href="fontes/fontes.css">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="icon" type="image/gif" href="imagens/scaniaicon.gif">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>FALE CONOSCO</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html"><img src="imagens/scaniaB.svg" width="200px"></a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li class="dropdown">
+                    <a href="#">LINHAS</a>
+                    <div class="dropdown-content">
+                        <a href="seriep.html">Série P</a>
+                        <a href="serieg.html">Série G</a>
+                        <a href="serier.html">Série R</a>
+                        <a href="series.html">Série S</a>
+                        <a href="seriev8.html">Série V8</a>
+                        <a href="seriext.html">Série XT</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="historias.html">HISTÓRIAS</a>
+                    <div class="dropdown-content">
+                        <a href="caminhao.html">CAMINHÃO</a>
+                        <a href="onibus.html">ÔNIBUS</a>
+                    </div>
+                </li>
+                <li><a href="motoresmaritimos.html">MOTORES MÁRITIMOS</a></li>
+                <li><a href="faleconosco.html" class="active" id="faleconosco">FALE CONOSCO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- <div class="gradiente"><img src="imagens/gradiente.svg"></div> -->
+    <div class="card" id="fale">
+        <img src="imagens/contato.jpg" alt="" class="imgabs">
+        <div class="textoabs">
+            <p class="bv1">FALE CONOSCO
+            <p>
+        </div>
+    </div>
+
+    <div class="form1">
+        <div class="input1">
+            <h2>ENVIAR UMA MENSAGEM</h2>
+            <label for="pnome">
+                <p>Primeiro nome</p>
+            </label>
+            <input type="text" id="nome" name="nome" placeholder="Primeiro">
+            <label for="tel">
+                <p>Telefone</p>
+            </label>
+            <input type="text" id="tel" name="tel" placeholder="DDD">
+        </div>
+        <div class="input2">
+            <label for="snome">
+                <p>Sobrenome</p>
+            </label>
+            <input type="text" id="snome" name="snome" placeholder="Segundo">
+            <label for="email">
+                <p>Email</p>
+            </label>
+            <input type="text" id="email" name="email" placeholder="@">
+        </div>
+
+        <div class="input3">
+            <label for="empresa">
+                <p>Assunto</p>
+            </label>
+
+            <select class="custom-select">
+                <option value="0">Dúvida</option>
+                <option value="1">Peças e Serviços</option>
+                <option value="2">Outros</option>
+            </select>
+
+            <!-- <input type="text" id="empresa" name="empresa"> -->
+            <label for="mensagem">
+                <p>Como podemos ajudar?</p>
+            </label>
+            <textarea type="text" id="mensagem" name="mensagem" rows="10" cols="70"
+                placeholder="Mensagem aqui"></textarea>
+            <button class="button" type="button">ENVIAR</button>
+        </div>
+        <div class="input4">
+            <h2 style="color: #fff;">INFORMAÇÃO DE CONTATO</h2>
+            <p style="color: #fff;"><img src="imagens/telefone.svg" style="width:20px;">(11) 9999-9999</p>
+            <p style="color: #fff;"><img src="imagens/email.svg" style="width:20px">scania@scania.com.br</p>
+
+            <h2 style="color: #fff;">SIGA-NOS</h2>
+            <div class="social">
+                <a href="https://www.facebook.com/ScaniaBrasil/"><i class="bi bi-facebook"></a></i>
+                <a href="https://www.instagram.com/scaniabrasil/?hl=pt-br"><i class="bi bi-instagram"></a></i>
+                <a href="https://twitter.com/scaniabrasil"><i class="bi bi-twitter"></a></i>
+                <a href="https://www.youtube.com/user/scaniabrasil"><i class="bi bi-youtube"></a></i>
+                <a href="https://www.linkedin.com/company/scaniabrasil/"><i class="bi bi-linkedin"></a></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card1" id="concessionaria">
+        <!-- <img src="imagens/concessionária.jpg" alt="" class="imgabs">  -->
+        <div class="textoabs2">
+            <p class="bv1" style="text-align:left">LOCALIZE UMA<br>
+                CONCESSIONÁRIA
+            <p>
+        </div>
+
+        <div class="form2">
+            <div class="box1">
+                <iframe src="https://www.scania.com/br/pt/home/misc/dealer-locator/dealer-search.html" frameborder="0"
+                    allowfullscreen=""></iframe>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- 
+    <div class="tabela">
+            <div class="coluna">
+                <h3>ENVIAR UMA MENSAGEM</h3>
+                <label for="pnome"><p>Primeiro nome</p></label>
+                <input type="text" id="nome" name="nome">
+                <label for="tel"><p>Telefone</p></label>
+                <input type="text" id="tel" name="tel">
+            </div>
+            <div class="coluna">
+                <label for="snome"><p>Sobre nome</p></label>
+                <input type="text" id="snome" name="snome">
+                <label for="email"><p>Email</p></label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div class="coluna">
+                <label for="empresa"><p>Grupo ou empresa</p></label>
+                <input type="text" id="empresa" name="empresa">
+                <label for="mensagem"><p>Como podemos ajudar?</p></label>
+                <input type="text" id="mensagem" name="mensagem">
+            </div>
+            
+    </div>
+     -->
+    <br><br><br>
+    <div class="footerbottom">
+        <footer>
+            <div class="logo">
+                <a href="index.html#home"><img src="imagens/logo1.svg" width="60px"></a>
+            </div>
+
+            <nav>
+                <ul class="menufooter">
+                    <li><a href="seriep.html">LINHAS</a>
+                        <!--  <ul>
+                        <a href="seriep.html">Série P</a>
+                        <a href="serieg.html">Série G</a>
+                        <a href="serier.html">Série R</a>
+                        <a href="series.html">Série S</a>
+                        <a href="seriev8.html">Série V8</a>
+                        <a href="seriext.html">Série XT</a>
+                    </ul> -->
+                    </li>
+                    <li><a href="historias.html">HISTÓRIAS</a>
+                        <!--  <ul>
+                    <a href="caminhao.html">CAMINHÃO</a>
+                    <a href="onibus.html">ÔNIBUS</a>
+                    </ul> -->
+                    </li>
+                    <li><a href="motoresmaritimos.html">MOTORES MÁRITIMOS</a></li>
+                    <li><a href="faleconosco.html">FALE CONOSCO</a></li>
+                </ul>
+            </nav>
+            <br>
+            <div class="social">
+                <a href="https://www.facebook.com/ScaniaBrasil/"><i class="bi bi-facebook"></a></i>
+                <a href="https://www.instagram.com/scaniabrasil/?hl=pt-br"><i class="bi bi-instagram"></a></i>
+                <a href="https://twitter.com/scaniabrasil"><i class="bi bi-twitter"></a></i>
+                <a href="https://www.youtube.com/user/scaniabrasil"><i class="bi bi-youtube"></a></i>
+                <a href="https://www.linkedin.com/company/scaniabrasil/"><i class="bi bi-linkedin"></a></i>
+            </div>
+
+            <br>
+            <div class="flex3">
+                <div>
+                    <p>POLÍTICA PRIVADA</p>
+                </div>
+                <div><img src="imagens/scaniaB.svg" alt="" width="150px"></div>
+                <div>
+                    <p>TERMOS E CONDIÇÕES</p>
+                </div>
+            </div>
+            <div class="pfooter">
+                <p>© Copyright SCANIA 2021 All rights reserved. (Msfasolin / SENAI 2021 - 1TDS) </p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
